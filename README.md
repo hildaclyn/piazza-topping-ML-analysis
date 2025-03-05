@@ -14,7 +14,7 @@ This project uses **ViT (Vision Transformer)** to classify pizza toppings from i
 The dataset includes:
 - **Images**: 9,213 pizza images (JPEG format)
 - **Labels**: One-hot encoded toppings (e.g., pepperoni, mushrooms, onions, bacon, etc.)
-- **Source**: [MIT Pizza Topping Dataset](http://pizzagan.csail.mit.edu/)  
+- **Source**: [MIT Pizza Topping Dataset](http://pizzagan.csail.mit.edu/)
 
 ### **📊 Data Distribution**  
 | Topping        | Count  |
@@ -54,7 +54,7 @@ The dataset includes:
 ### **3️⃣ Training Details**
 - **Optimizer**: AdamW (`lr=2e-5`)
 - **Loss Function**: Custom **Focal Loss** with dynamic class weights.
-- **Batch Size**: 16
+- **Batch Size**: 8
 - **Epochs**: 5 (can be extended)
 
 ---
@@ -63,7 +63,7 @@ The dataset includes:
 ### **✅ Accuracy**
 | Model | Test Accuracy |
 |-------|--------------|
-| ViT   | **87%**      |
+| ViT   | **83%**      |
 
 ### **🔍 Common Misclassifications**
 - `onion` → mistaken as `black_olive`
@@ -112,15 +112,22 @@ print("Predicted Toppings:", toppings)
 ---
 
 ## **📢 Contributors**
-- **[Your Name]** - ML Engineer  
-- **[Your Team]** - AI Research  
+- **Xindan Zhang** - ML Engineer  
+- **Xindan Zhang** - AI Research  
 
 🚀 **Feel free to contribute!** Open a pull request or report issues.  
 
 ---
 
-## **📄 License**
-This project data is open-source under the **MIT License** [http://pizzagan.csail.mit.edu/].  
+## 📜 License
+
+This project is open-source under the **MIT License**.
+
+⚠ **Note**: The dataset used in this project was obtained from **Kaggle**:  
+**[Pizza Images with Topping Labels](https://www.kaggle.com/datasets/michaelbryantds/pizza-images-with-topping-labels)**  
+The dataset was originally sourced from **MIT's PizzaGAN project** ([MIT PizzaGAN](http://pizzagan.csail.mit.edu/)).  
+
+The dataset license is **determined by the original authors**. If you plan to use this dataset for commercial purposes, please check with the dataset provider for permission. 
 
 ---
 
