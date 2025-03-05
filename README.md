@@ -10,11 +10,22 @@ This project uses **ViT (Vision Transformer)** to classify pizza toppings from i
 
 ---
 
-## **📂 Dataset**  
-The dataset includes:
-- **Images**: 9,213 pizza images (JPEG format)
-- **Labels**: One-hot encoded toppings (e.g., pepperoni, mushrooms, onions, bacon, etc.)
-- **Source**: [MIT Pizza Topping Dataset](http://pizzagan.csail.mit.edu/)
+## 📂 Dataset
+This project uses a dataset sourced from **Kaggle**:  
+**[Pizza Images with Topping Labels](https://www.kaggle.com/datasets/michaelbryantds/pizza-images-with-topping-labels)**  
+The dataset was originally collected as part of the **MIT PizzaGAN project** ([MIT PizzaGAN](http://pizzagan.csail.mit.edu/)).  
+
+📌 **Dataset Overview:**
+- 9,213 labeled pizza images
+- Labels for common toppings: `pepperoni, mushrooms, onions, bacon, etc.`
+- Data collected via **crowdsourcing on Amazon Mechanical Turk (AMT)**
+
+⚠ **Note:**  
+The `data/` folder in this repository contains **only a few sample images** for testing purposes.  
+The full dataset is too large to be stored in this repository. You can download the full dataset from:  
+🔗 **[Kaggle Dataset - Pizza Images with Topping Labels](https://www.kaggle.com/datasets/michaelbryantds/pizza-images-with-topping-labels)**  
+
+---
 
 ### **📊 Data Distribution**  
 | Topping        | Count  |
@@ -77,6 +88,12 @@ The dataset includes:
 ---
 
 ## **🚀 How to Run**
+
+### 1️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
 ### **1️⃣ Install Dependencies**
 ```bash
 pip install torch torchvision transformers opencv-python matplotlib seaborn
